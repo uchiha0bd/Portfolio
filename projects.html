@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Preload critical resources -->
+<link rel="preload" href="styles/main.css" as="style">
+<link rel="preload" href="scripts/app.js" as="script">
+
+<!-- DNS Prefetching -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Pioneers UTM Projects - Explore our software engineering projects from UTM Johor Bahru">
+    <title>Our Projects | Tech Pioneers UTM</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">TechPioneersUTM</a>
+        
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Team</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button class="menu-toggle" aria-label="Mobile menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <main class="main-content">
+        <section class="projects-section">
+            <h1 class="section-title">Our Projects</h1>
+            
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="iot">IoT</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/project1-thumb.webp" data-src="images/project1-full.webp" 
+                             alt="E-commerce platform interface" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>UTM MarketHub</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <p class="project-description">
+                            University-focused e-commerce platform with real-time chat and payment integration.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="demo-link">Live Demo</a>
+                            <a href="#" class="code-link">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/project2-thumb.webp" data-src="images/project2-full.webp" 
+                             alt="Mobile app screenshot" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Campus Navigator</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                        <p class="project-description">
+                            Indoor navigation system for UTM buildings with AR capabilities.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="demo-link">Live Demo</a>
+                            <a href="#" class="code-link">View Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="iot">
+                    <div class="project-image">
+                        <img src="images/project3-thumb.webp" data-src="images/project3-full.webp" 
+                             alt="IoT device prototype" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Classroom System</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">AWS IoT</span>
+                        </div>
+                        <p class="project-description">
+                            IoT-based classroom automation system monitoring occupancy and environment.
+                        </p>
+                        <div class="project-links">
+                            <a href="#" class="demo-link">Case Study</a>
+                            <a href="#" class="code-link">Documentation</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Tech Pioneers UTM</h3>
+                <p class="footer-text">A team of passionate software engineering students from Universiti Teknologi Malaysia committed to building innovative digital solutions.</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Team Profiles -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Our Team</h3>
+                <div class="team-profiles">
+                    <div class="team-member">
+                        <h4>Fares Hamid</h4>
+                        <div class="member-links">
+                            <a href="https://www.linkedin.com/in/fares-hamid-858118269/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/linkedin-icon.svg" alt="Fares' LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://github.com/uchiha0bd" target="_blank" rel="noopener noreferrer">
+                                <img src="images/github-icon.svg" alt="Fares' GitHub" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="team-member">
+                        <h4>Arnob Mashrur</h4>
+                        <div class="member-links">
+                            <a href="https://www.linkedin.com/in/mashrur-rahman-arnob-0529512a2" target="_blank" rel="noopener noreferrer">
+                                <img src="images/linkedin-icon.svg" alt="Arnob's LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://github.com/MashrurRahman231" target="_blank" rel="noopener noreferrer">
+                                <img src="images/github-icon.svg" alt="Arnob's GitHub" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3 class="footer-heading">Contact</h3>
+                <p class="footer-text">
+                    <img src="images/email-icon.svg" alt="Email" class="icon">
+                    contact@techpioneersutm.com
+                </p>
+                <p class="footer-text">
+                    <img src="images/location-icon.svg" alt="Location" class="icon">
+                    Johor Bahru, Malaysia
+                </p>
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2023 Tech Pioneers UTM. All rights reserved.</p>
+            <p>Follow us on 
+                <a href="#" class="social-text">Twitter</a> | 
+                <a href="#" class="social-text">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Same footer as index.html -->
+    <script src="scripts/app.js" async></script>
+</body>
+</html>
